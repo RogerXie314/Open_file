@@ -1,0 +1,9 @@
+D:\Csharp\Open_file\Open_file\bin\Debug\Open_file.exe
+D:\Csharp\Open_file\Open_file\bin\Debug\Open_file.pdb
+D:\Csharp\Open_file\Open_file\obj\Debug\Open_file.Form1.resources
+D:\Csharp\Open_file\Open_file\obj\Debug\Open_file.Properties.Resources.resources
+D:\Csharp\Open_file\Open_file\obj\Debug\Open_file.csproj.GenerateResource.cache
+D:\Csharp\Open_file\Open_file\obj\Debug\Open_file.csproj.CoreCompileInputs.cache
+D:\Csharp\Open_file\Open_file\obj\Debug\Open_file.exe
+D:\Csharp\Open_file\Open_file\obj\Debug\Open_file.pdb
+D:\Csharp\Open_file\Open_file\bin\Debug\Open_file.exe.config
