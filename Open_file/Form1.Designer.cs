@@ -221,7 +221,7 @@
             // 
             this.CreateFile.Font = new System.Drawing.Font("宋体", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.CreateFile.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.CreateFile.Location = new System.Drawing.Point(196, 186);
+            this.CreateFile.Location = new System.Drawing.Point(238, 186);
             this.CreateFile.Name = "CreateFile";
             this.CreateFile.Size = new System.Drawing.Size(71, 23);
             this.CreateFile.TabIndex = 36;
@@ -231,7 +231,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(265, 187);
+            this.textBox9.Location = new System.Drawing.Point(307, 187);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(76, 21);
             this.textBox9.TabIndex = 37;
@@ -240,7 +240,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(349, 190);
+            this.label11.Location = new System.Drawing.Point(384, 190);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(17, 12);
             this.label11.TabIndex = 38;
@@ -251,7 +251,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("宋体", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(190, 212);
+            this.label12.Location = new System.Drawing.Point(232, 212);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(185, 10);
             this.label12.TabIndex = 39;
@@ -473,7 +473,7 @@
             this.groupBox1.Size = new System.Drawing.Size(441, 171);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "压力测试";
+            this.groupBox1.Text = "循环操作";
             // 
             // button13
             // 
@@ -513,7 +513,7 @@
             this.groupBox2.Size = new System.Drawing.Size(441, 237);
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "普通测试";
+            this.groupBox2.Text = "普通操作";
             // 
             // Form1
             // 
@@ -526,7 +526,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "IEG_TEST: (WNT)";
+            this.Text = "FILE_TEST: ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
