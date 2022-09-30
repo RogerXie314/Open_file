@@ -213,7 +213,7 @@ namespace Open_file
             try
             {
                 if (IsExistFile(pathSource))
-                    using (var fileStream = new FileStream(pathSource, FileMode.Open, FileAccess.Read))
+                    using (var fileStream = new FileStream(pathSource, FileMode.Open, FileAccess.ReadWrite))
                     {
                         byte[] b = new byte[1024];
                         UTF8Encoding data = new UTF8Encoding(true);
