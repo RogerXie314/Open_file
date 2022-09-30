@@ -462,6 +462,12 @@ namespace Open_file
                         {
                             continue;
                         }
+                        finally
+                        {
+                            IDisposable disposable = tokenSource as IDisposable;
+                            if (disposable != null)
+                                disposable.Dispose();
+                        }
                     }
                 }
                 else
