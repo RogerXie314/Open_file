@@ -63,7 +63,10 @@ namespace Open_file
 
             if (File.Exists(file))
             {
-                File.Delete(file);
+                try
+                { File.Delete(file); }
+                catch (Exception)
+                { return; }
             }
         }
         //删除指定目录方法
@@ -71,7 +74,10 @@ namespace Open_file
         {
             if (IsExistDirectory(directoryPath))
             {
-                Directory.Delete(directoryPath, true);
+                try
+                { Directory.Delete(directoryPath, true); }
+                catch (Exception)
+                { return; }
             }
         }
         //创建文件方法
@@ -98,7 +104,10 @@ namespace Open_file
         {
             if (File.Exists(file))
             {
-                File.AppendAllText(file, "写入测试成功!");
+                try
+                { File.AppendAllText(file, "写入测试成功!"); }
+                catch(Exception)
+                { return; }
             }
         }
 
@@ -107,7 +116,10 @@ namespace Open_file
         {
             if (File.Exists(file))
             {
-                Process.Start(file);
+                try
+                { Process.Start(file); }
+                catch (Exception)
+                { return; }
             }
         }
         //文件重命名方法
