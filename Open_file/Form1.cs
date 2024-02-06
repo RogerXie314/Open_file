@@ -128,8 +128,6 @@ namespace Open_file
             }
         }
 
-
-
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -411,13 +409,13 @@ namespace Open_file
             //运行压力测试
             String File_Start = textBox7.Text;
             //循环阈值
-
+            textBox3.Text = "";
             String Num = textBox8.Text;
             
 
             if (string.IsNullOrEmpty(Num))
             {
-                MessageBox.Show("循环阈值输入为空！");
+                textBox3.Text = "循环阈值输入为空！";
                 return;
             }
             else
@@ -429,7 +427,7 @@ namespace Open_file
                     {
                         if (tokenSource.IsCancellationRequested)
                         {
-                            MessageBox.Show("task cancelled!");
+                           textBox3.Text="task cancelled!";
                             
                             button1.Enabled = true;
                             button2.Enabled = true; button3.Enabled = true; button4.Enabled = true; Button1_Execute.Enabled = true; button11.Enabled = true;
@@ -439,6 +437,7 @@ namespace Open_file
                         if (task_status == false)
                         {
                             tokenSource.Cancel();
+                            continue;
                         }
                         try
                         {
@@ -465,7 +464,7 @@ namespace Open_file
                     }
                 }
                 else
-                { MessageBox.Show("请输入整数！"); }
+                { textBox3.Text = "请输入整数！"; }
             }
 
 
@@ -652,8 +651,6 @@ namespace Open_file
             //点击停止按钮task状态值置为false.
             task_status = false;
         }
-
-
 
     }
 
